@@ -11,7 +11,7 @@ const Radar = function () {
   const config = require('../config')
   const featureToggles = config().featureToggles
 
-  let self, quadrants, blipNumber, addingQuadrant, alternatives, currentSheetName, rings
+  let self, quadrants, blipNumber, addingQuadrant, rings
 
   blipNumber = 0
   addingQuadrant = 0
@@ -28,8 +28,6 @@ const Radar = function () {
         { order: 'third', startAngle: -90 },
         { order: 'fourth', startAngle: -180 },
       ]
-  alternatives = []
-  currentSheetName = ''
   self = {}
   rings = {}
 
@@ -39,22 +37,6 @@ const Radar = function () {
       blip.setBlipText(blipNumber)
       blip.setId(blipNumber)
     })
-  }
-
-  self.addAlternative = function (sheetName) {
-    alternatives.push(sheetName)
-  }
-
-  self.getAlternatives = function () {
-    return alternatives
-  }
-
-  self.setCurrentSheet = function (sheetName) {
-    currentSheetName = sheetName
-  }
-
-  self.getCurrentSheet = function () {
-    return currentSheetName
   }
 
   self.addQuadrant = function (quadrant) {

@@ -7,13 +7,6 @@ header {
 
 .radar-title,
 .buttons-group,
-#alternative-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: space-between;
-}
 
 .radar-title {
   background-color: $grey-light;
@@ -148,39 +141,6 @@ header {
       background-color: $violet;
       color: $white;
     }
-  }
-}
-
-#alternative-buttons {
-  margin-bottom: 50px;
-
-  .highlight {
-    border-bottom: none;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  .multiple-sheet-button {
-    margin-right: 10px;
-  }
-
-  .search-radar {
-    border: 1px solid #aaa;
-    background-color: inherit;
-    background-image: url('/images/search-logo-2x.svg');
-    background-repeat: no-repeat;
-    background-position: 10px;
-  }
-
-  input {
-    padding-left: 35px;
-    width: 275px;
   }
 }
 

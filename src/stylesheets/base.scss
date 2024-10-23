@@ -1,15 +1,9 @@
 @import 'colors';
 @import 'fonts';
 @import 'tip';
-@import 'form';
-@import 'error';
 @import 'header';
-@import 'footer';
-@import 'herobanner';
 @import 'quadrantsubnav';
 @import 'search';
-@import 'alternativeradars';
-@import 'buttons';
 @import 'quadrants';
 @import 'quadrantTables';
 @import 'mediaqueries';
@@ -17,7 +11,6 @@
 @import 'landingpage';
 @import 'loader';
 @import 'screen';
-@import 'pdfPage';
 
 :root {
   font-family: 'Inter', sans-serif;

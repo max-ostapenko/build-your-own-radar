@@ -14,7 +14,7 @@
 
   .search-container {
     height: auto;
-    margin: 48px auto 40px;
+    margin: 48px auto 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@
     }
 
     @include media-query-xxlarge {
-      margin: 40px auto;
+      margin: 20px auto;
 
       &.sticky-offset {
         margin-top: 100px;
